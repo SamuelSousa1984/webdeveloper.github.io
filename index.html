@@ -14,43 +14,42 @@
 </head>
 <body ng-app="myApp">
 	<div class="container-fluid">		
-		<header>
+		<header class="bg-warning">
 			<div class="text-center">
 				<p>Bem vindos ao meu web site</p>
+				<div ng-controller="myCtrl" class="time float-right text-light bg-dark">
+					{{TheTime}}
+				</div>
 				<p>Criado com o propósito de ser meu portfólio pessoal!</p>
 			</div>
-			<div ng-controller="myCtrl" class="time float-right">
-				{{TheTime}}
+			<div>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li class="nav-item active">
+								<a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="projetos.html">Meus Projetos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contatos.html">Contato</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					</div>
+				</nav>
 			</div>
-			<a href="home.html">
-				<img src="img/HomeImagem.jpg" alt="Home" width="100" height="100">
-			</a>
 		</header>
-		<div>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				    	<li class="nav-item active">
-				        	<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				    	</li>
-				    	<li class="nav-item">
-				    		<a class="nav-link" href="projetos.html">Meus Projetos</a>
-				    	</li>
-				    	<li class="nav-item">
-				        	<a class="nav-link" href="contatos.html">Contato</a>
-				    	</li>
-				    </ul>
-				    <form class="form-inline my-2 my-lg-0">
-				    	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				    </form>
-				</div>
-			</nav>
-		</div>
-		<div class="container-fluid">
+		<br>
+		<div class="container-fluid bg-light">
 			<div class="row">
 				<div class="col-col-xs-12 col-sm-12 col-md-12 col-lg-12">	
 					<h1 class="text-center">Web Developer</h1>
@@ -60,36 +59,76 @@
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="HTML5">
 					<h2 class="text-center">HTML5</h2>
 					<img src="img/htmlicone.png" alt="HTML5 icon" width="50" height="50" title="HTML5" class="rounded mx-auto d-block">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dolor sit amet tortor malesuada dignissim auctor ac libero. Vivamus laoreet, odio non condimentum lobortis, leo enim accumsan nunc, in sagittis ante massa quis risus. Phasellus sodales libero sed lacus venenatis, a ultrices eros luctus. Fusce sit amet porttitor felis, vitae volutpat ligula. In sagittis, augue non vulputate feugiat, odio lectus dapibus tortor, vitae finibus lacus nisi et nibh. Ut ornare est eget maximus finibus. Suspendisse sollicitudin enim risus, eget interdum massa ultricies a.	
+					<p>O <b>HTML5 é a nova versão do HTML4</b> e um dos seus principais objetivos é facilitar a manipulação dos elementos, possibilitando o desenvolvedor modificar as características dos objetos de forma não intrusiva, fazendo com que isso fique transparente para o usuário final.	
 					</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="CSS3">
 					<h2 class="text-center">CSS3</h2>
 					<img src="img/css3icone.png" alt="CSS3 icon" width="50" height="50" title="CSS3" class="rounded mx-auto d-block">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dolor sit amet tortor malesuada dignissim auctor ac libero. Vivamus laoreet, odio non condimentum lobortis, leo enim accumsan nunc, in sagittis ante massa quis risus. Phasellus sodales libero sed lacus venenatis, a ultrices eros luctus. Fusce sit amet porttitor felis, vitae volutpat ligula. In sagittis, augue non vulputate feugiat, odio lectus dapibus tortor, vitae finibus lacus nisi et nibh. Ut ornare est eget maximus finibus. Suspendisse sollicitudin enim risus, eget interdum massa ultricies a.
+					<p><b>CSS3</b> é a segunda mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), onde se define estilos para páginas web com efeitos de transição, imagem, e outros, que dão um estilo novo às páginas Web 2.0 em todos os aspectos de design do layout.
+
+					A principal função do CSS3 é abolir as imagens de plano de fundo, bordas arredondadas, apresentar transições e efeitos para criar animações de vários tipos, como um simples relógio de ponteiros.
 					</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="JavaScript">
 					<h2 class="text-center">JavaScript</h2>
 					<img src="img/JSicone.png" alt="JavaScript icon" width="50" height="50" title="JavaScript" class="rounded mx-auto d-block">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dolor sit amet tortor malesuada dignissim auctor ac libero. Vivamus laoreet, odio non condimentum lobortis, leo enim accumsan nunc, in sagittis ante massa quis risus. Phasellus sodales libero sed lacus venenatis, a ultrices eros luctus. Fusce sit amet porttitor felis, vitae volutpat ligula. In sagittis, augue non vulputate feugiat, odio lectus dapibus tortor, vitae finibus lacus nisi et nibh. Ut ornare est eget maximus finibus. Suspendisse sollicitudin enim risus, eget interdum massa ultricies a.
+					<p><b>JavaScript</b> é uma linguagem de programação interpretada. Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem com o usuário sem a necessidade deste script passar pelo servidor, controlando o navegador, realizando comunicação assíncrona e alterando o conteúdo do documento exibido.
 					</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="Python3">
 					<h2 class="text-center">Python</h2>
 					<img src="img/pythonicon.png" alt="Python icon" width="50" height="50" title="Python 3" class="rounded mx-auto d-block">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dolor sit amet tortor malesuada dignissim auctor ac libero. Vivamus laoreet, odio non condimentum lobortis, leo enim accumsan nunc, in sagittis ante massa quis risus. Phasellus sodales libero sed lacus venenatis, a ultrices eros luctus. Fusce sit amet porttitor felis, vitae volutpat ligula. In sagittis, augue non vulputate feugiat, odio lectus dapibus tortor, vitae finibus lacus nisi et nibh. Ut ornare est eget maximus finibus. Suspendisse sollicitudin enim risus, eget interdum massa ultricies a.
+					<p><b>Python</b> é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização sem fins lucrativos Python Software Foundation. Apesar de várias partes da linguagem possuírem padrões e especificações formais, a linguagem como um todo não é formalmente especificada. O padrão de facto é a implementação CPython.
 					</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="Django">
 					<h2 class="text-center">Django</h2>
 					<img src="img/djangoicone.png" alt="Django" width="50" height="60" title="Django" class="rounded mx-auto d-block">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dolor sit amet tortor malesuada dignissim auctor ac libero. Vivamus laoreet, odio non condimentum lobortis, leo enim accumsan nunc, in sagittis ante massa quis risus. Phasellus sodales libero sed lacus venenatis, a ultrices eros luctus. Fusce sit amet porttitor felis, vitae volutpat ligula. In sagittis, augue non vulputate feugiat, odio lectus dapibus tortor, vitae finibus lacus nisi et nibh. Ut ornare est eget maximus finibus. Suspendisse sollicitudin enim risus, eget interdum massa ultricies a.</p>
+					<p>Django é um framework para desenvolvimento rápido para web, escrito em Python, que utiliza o padrão model-template-view (MTV). Foi criado originalmente como sistema para gerenciar um site jornalístico na cidade de Lawrence, no Kansas. Tornou-se um projeto de código aberto e foi publicado sob a licença BSD em 2005. O nome Django foi inspirado no músico de jazz Django Reinhardt.</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<br>
+	<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1 class="text-center">Projetos em desenvolvimento</h1>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="projeto1">
+					<h2 class="text-center">Jogo de Adivinhação</h2>
+						<p> Criei um jogo de adivinhação que está disponivel para apreciação no meu Github. Este desenvolvido em Python 3, ainda não está completo, pois ainda implementarei a interface gráfica. <a href="https://github.com/SamuelSousa1984">Link</a> para o jogo.
+						</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="projeto2">
+					<h2 class="text-center">Este website ao qual vocês navegam</h2>
+						<p>Website criado com o propósito de servir de portfólio para quem desejar conhecer meu trabalho e contratar meus serviços. Este site que interage com vocês =].</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<h2 class="text-center">Novo Site em breve!!!</h2>
+					<p>Aguardem um site em breve!!!</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<h2 class="text-center">Colaborando com o lançamento de um blog!!!</h2>
+					<p>Aguardem para maiores informações...</p>
+				</div>
+			</div>
+		</div>
+		<br>
 		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2 class="text-center">Contato</h2>
+					<p class="float-left">Siga minhas Redes Sociais!!!</p>
+					<a href="https://www.linkedin.com/in/samuel-sousa-pereira-ba48a114a/" class="float-right"><img src="img/LinkedIn.png" alt="LinkedIn" title="LinkedIn" class="d-inline" width="90" height="50"></a>
+					<a href="https://github.com/SamuelSousa1984" class="float-right"><img src="img/Github.png" alt="Github" title="Github" class="d-inline" width="50" height="50"></a>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="container-fluid text-light bg-dark">
 			<div class="row">
 				<div class="col-col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<h2 class="text-center">Direitos Autorais</h2>
